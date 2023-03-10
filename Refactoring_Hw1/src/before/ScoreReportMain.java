@@ -11,16 +11,16 @@ enum Command {
 	SHOW_STDUENT(3),
 	CLEAR_STUDENT_SCORE(4),
 	INIT_STUDENT(-1);
-	
+
 	private final int index;
-	
+
 	Command(int index){
 		this.index = index;
 	}
-	
+
 	public int getIndex() {
 		return this.index;
-	}	
+	}
 }
 
 public class ScoreReportMain {
@@ -32,18 +32,19 @@ public class ScoreReportMain {
 		ScoreReportMain ui = new ScoreReportMain() ;
 
 		boolean isQuit = false ;
-		
+
 		while ( ! isQuit ) {
+			ui.showCommand();
 			Command command = ui.getCommand();
 
 			switch ( command ) {
-			case QUIT: isQuit = true ; break ;
-			case ADD_STUDENT: ui.add("student") ; break ;
-			case ADD_SCORE: ui.add("scores") ; break ;
-			case SHOW_STDUENT: ui.showStudentReport() ; break ;
-			case CLEAR_STUDENT_SCORE: ui.closeSudentScs() ; break ;
-			case INIT_STUDENT: ui.init() ; break ;
-			default: break ;
+				case QUIT: isQuit = true ; break ;
+				case ADD_STUDENT: ui.add("student") ; break ;
+				case ADD_SCORE: ui.add("scores") ; break ;
+				case SHOW_STDUENT: ui.showStudentReport() ; break ;
+				case CLEAR_STUDENT_SCORE: ui.closeSudentScs() ; break ;
+				case INIT_STUDENT: ui.init() ; break ;
+				default: break ;
 			}
 		}
 		System.out.println("Bye");
@@ -56,9 +57,9 @@ public class ScoreReportMain {
 			}
 		}
 		return null;
-		
+
 	}
-	private int showCommamd() {
+	private void showCommand() {
 		System.out.println("\nSelect a command !");
 		System.out.println("\t -1. Init");
 		System.out.println("\t 0. Quit");
@@ -66,9 +67,6 @@ public class ScoreReportMain {
 		System.out.println("\t 2. Add scores");
 		System.out.println("\t 3. Show student report");
 		System.out.println("\t 4. Clear student scores");
-		
-		int cmd = scanner.nextInt() ;
-		return cmd ;
 	}
 	private void init() {
 		Student james = new Student("James") ;
@@ -113,7 +111,7 @@ public class ScoreReportMain {
 			}
 		}
 	}
-	
+
 	private void addStudent() {
 		String studentName = getStduetnName(PROMPT_MSG_FOR_STUDENT, new isValidName(){
 			@Override
@@ -127,9 +125,9 @@ public class ScoreReportMain {
 		studentlist.add(newStudent);
 	}
 	private void addScores() {
-		
+
 	}
-	
+
 	// student,score 입력 함수 분리 필요
 	private void add(String kind) {
 		if ( kind.equals("student") ) {
@@ -155,9 +153,9 @@ public class ScoreReportMain {
 			}
 		}
 	}
-	
+
 	private String getStduetnName(final String prompt, isValidName isvalid) {
-		
+
 		String studentName = scanner.next();
 		if(isvalid.validTest(studentName)) {
 			return studentName;
