@@ -1,20 +1,13 @@
 package after;
 
 public class Point {
-    private int pointX;
-    private int pointY;
+    private int point;
 
-    public int getPointX() {
-        return pointX;
+    public Point(int point) {
+        this.point = point;
     }
 
-    public int getPointY() {
-        return pointY;
+    public int getPoint(boolean is_horizontal){
+        return is_horizontal ? point : point*2;
     }
-
-    public Point(int pointX, int pointY) {
-        this.pointX = pointX;
-        this.pointY = pointY;
-    }
-
 }

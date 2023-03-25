@@ -8,7 +8,7 @@ public class PuzzleBuilder {
 
 	public PuzzleBuilder(String puzzle_name, int size) {
 		this.puzzle_name = puzzle_name;
-		words = new Word[size];
+		this.words = new Word[size];
 		index = 0;
 	}
 
@@ -17,8 +17,8 @@ public class PuzzleBuilder {
 	}
 
 	public int addWord(Word add_word) {
-		boolean is_word_addable = add_word.is_there_equal_word(words) || add_word.is_there_cross_word(words);
-		if (!is_word_addable)
+		for (int i = 0; i < index; i++)
+			if (add_word.is_equal_word(words[i]) || add_word.is_there_cross_word(words[i]))
 				return -1;
 		words[index++] = add_word;
 		return 0;
@@ -37,46 +37,33 @@ public class PuzzleBuilder {
 		return -1;
 	}
 
-	public int getPoint() {
+	public int getTotalPoint() {
 		int totalPoint = 0;
 		for (int i = 0; i < index; i++) {
-			int point;
-			if (words[i].getWord_positions().isHorzontal())
-				point = words[i].getword().length();
-			else
-				point = words[i].getword().length() * 2;
-
-			totalPoint += point;
+			totalPoint += words[i].calculatePoint();
 		}
 		return totalPoint;
 	}
 
-	public String getShortReport(boolean isHTML) {
+	public String getShortReport(Report report) {
 		String value;
-		if (isHTML) {
+		if (report.isHTML()) {
 			value = "<H1> Report on Puzzle <EM> " + puzzle_name + "</EM></H1>\n";
 		} else {
 			value = "Report on Puzzle " + puzzle_name + "\n";
 		}
-		int point = 0;
+		int total_point = getTotalPoint();
 		for (int i = 0; i < index; i++) {
-			int result;
-			if (words[i].getWord_positions().isHorzontal())
-				result = words[i].getword().length();
-			else
-				result = words[i].getword().length() * 2;
-
-			if (isHTML)
+			int result = words[i].calculatePoint();
+			if (report.isHTML())
 				value += "\tWord: <B>" + words[i].getword() + "</B>\tPoint: <B> " + result + "</B>\n";
 			else
 				value += "\tWord: " + words[i].getword() + "\tPoint: " + result + "\n";
-
-			point += result;
 		}
-		if (isHTML) {
-			value += "<HR> Total Point: <B>" + point + "</B><P>\n";
+		if (report.isHTML()) {
+			value += "<HR> Total Point: <B>" + total_point + "</B><P>\n";
 		} else {
-			value += "Total Point: " + point + "\n";
+			value += "Total Point: " + total_point + "\n";
 		}
 		return value;
 	}

@@ -11,6 +11,6 @@ public class PuzzleMain {
     puzzleBuilder.addWord(new Word("programming", new Position(3,3,Direction.VERTICAL)));
 
     System.out.print(puzzleBuilder.getFullReport(false) + " ");
-    System.out.print(puzzleBuilder.getShortReport(false) + " ");
+    System.out.print(puzzleBuilder.getShortReport(new Report(false)) + " ");
 }
 }
