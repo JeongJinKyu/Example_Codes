@@ -27,26 +27,26 @@ public class PuzzleBuilder {
 		for (int i = 0; i < index; i++) {
 			if (word_positions[i].isHorzontal()) { // ����
 				if (word_position.isHorzontal()) { // ����
-					if (ys[i] == y && ((x >= xs[i] && x <= xs[i] + values[i].length())
-							|| (x + value.length() >= xs[i] && x + value.length() <= xs[i] + values[i].length()))) {
+					if (word_positions[i].getY_coordinate_of_word() == word_position.getY_coordinate_of_word() && ((word_position.getX_coordinate_of_word() >= word_positions[i].getY_coordinate_of_word() && word_position.getX_coordinate_of_word() <= word_positions[i].getY_coordinate_of_word() + values[i].length())
+							|| (word_position.getX_coordinate_of_word() + value.length() >= word_positions[i].getY_coordinate_of_word() && word_position.getX_coordinate_of_word() + value.length() <= word_positions[i].getY_coordinate_of_word() + values[i].length()))) {
 						result = true;
 						break;
 					}
 				} else { // ����
-					if (x >= xs[i] && x <= xs[i] + values[i].length() && ys[i] >= y && ys[i] <= y + value.length()) {
+					if (word_position.getX_coordinate_of_word() >= word_positions[i].getY_coordinate_of_word() && word_position.getX_coordinate_of_word() <= word_positions[i].getY_coordinate_of_word() + values[i].length() && word_positions[i].getY_coordinate_of_word() >= word_position.getY_coordinate_of_word() && word_positions[i].getY_coordinate_of_word() <= word_position.getY_coordinate_of_word() + value.length()) {
 						result = true;
 						break;
 					}
 				}
 			} else { // ����
 				if (word_position.isHorzontal()) { // ����
-					if (xs[i] >= x && xs[i] <= x + value.length() && y >= ys[i] && y <= ys[i] + values[i].length()) {
+					if (word_positions[i].getY_coordinate_of_word() >= word_position.getX_coordinate_of_word() && word_positions[i].getY_coordinate_of_word() <= word_position.getX_coordinate_of_word() + value.length() && word_position.getY_coordinate_of_word() >= word_positions[i].getY_coordinate_of_word() && word_position.getY_coordinate_of_word() <= word_positions[i].getY_coordinate_of_word() + values[i].length()) {
 						result = true;
 						break;
 					}
 				} else { // ����
-					if (xs[i] == x && ((y >= ys[i] && y <= ys[i] + values[i].length())
-							|| (y + value.length() >= ys[i] && y + value.length() <= ys[i] + values[i].length()))) {
+					if (word_positions[i].getY_coordinate_of_word() == word_position.getX_coordinate_of_word() && ((word_position.getY_coordinate_of_word() >= word_positions[i].getY_coordinate_of_word() && word_position.getY_coordinate_of_word() <= word_positions[i].getY_coordinate_of_word() + values[i].length())
+							|| (word_position.getY_coordinate_of_word() + value.length() >= word_positions[i].getY_coordinate_of_word() && word_position.getY_coordinate_of_word() + value.length() <= word_positions[i].getY_coordinate_of_word() + values[i].length()))) {
 						result = true;
 						break;
 					}
@@ -57,21 +57,18 @@ public class PuzzleBuilder {
 			return -2;
 
 		values[index] = value;
-		xs[index] = x;
-		ys[index] = y;
-		word_positions[index] = word_position.getDirection();
-
+		word_positions[index] = new Position(word_position.getX_coordinate_of_word(),word_position.getY_coordinate_of_word(),word_position.getDirection());
 		index++;
 		return 0;
 	}
 
-	public int getWordPosition(int coord, String value, int dir) {
+	public int getWordPosition(int coord, String value, Direction dir) {
 		for (int i = 0; i < index; i++) {
-			if (values[i].compareTo(value) == 0 && dirs[i] == dir) {
+			if (values[i].compareTo(value) == 0 && word_positions[i].getDirection().equals(dir)) {
 				if (coord == 0)
-					return xs[i];
+					return word_positions[i].getY_coordinate_of_word();
 				else
-					return ys[i];
+					return word_positions[i].getY_coordinate_of_word();
 			}
 		}
 
@@ -82,7 +79,7 @@ public class PuzzleBuilder {
 		int totalPoint = 0;
 		for (int i = 0; i < index; i++) {
 			int point;
-			if (dirs[i] == 0)
+			if (word_positions[i].isHorzontal())
 				point = values[i].length();
 			else
 				point = values[i].length() * 2;
@@ -102,7 +99,7 @@ public class PuzzleBuilder {
 		int point = 0;
 		for (int i = 0; i < index; i++) {
 			int result;
-			if (dirs[i] == 0)
+			if (word_positions[i].isHorzontal())
 				result = values[i].length();
 			else
 				result = values[i].length() * 2;
@@ -132,16 +129,16 @@ public class PuzzleBuilder {
 		int point = 0;
 		for (int i = 0; i < index; i++) {
 			int result;
-			if (dirs[i] == 0)
+			if (word_positions[i].isHorzontal())
 				result = values[i].length();
 			else
 				result = values[i].length() * 2;
 
 			if (isHTML)
-				value += "\tWord: <B>" + values[i] + "\tPosition: [" + xs[i] + ", " + ys[i] + "]" + "\tDir: " + dirs[i]
+				value += "\tWord: <B>" + values[i] + "\tPosition: [" + word_positions[i].getY_coordinate_of_word() + ", " + word_positions[i].getY_coordinate_of_word() + "]" + "\tDir: " + word_positions[i].getDirection()
 						+ " </B> Point: <B> " + result + "</B>\n";
 			else
-				value += "\tWord: " + values[i] + "\tPosition: [" + xs[i] + ", " + ys[i] + "]" + "\tDir: " + dirs[i]
+				value += "\tWord: " + values[i] + "\tPosition: [" + word_positions[i].getY_coordinate_of_word() + ", " + word_positions[i].getY_coordinate_of_word() + "]" + "\tDir: " + word_positions[i].getDirection()
 						+ " Point: " + result + "\n";
 
 			point += result;
