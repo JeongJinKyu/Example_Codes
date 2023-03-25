@@ -45,9 +45,9 @@ public class PuzzleBuilder {
 		return totalPoint;
 	}
 
-	public String getShortReport(Report report) {
+	public String getShortReport(boolean isHTML) {
 		String value;
-		if (report.isHTML()) {
+		if (isHTML) {
 			value = "<H1> Report on Puzzle <EM> " + puzzle_name + "</EM></H1>\n";
 		} else {
 			value = "Report on Puzzle " + puzzle_name + "\n";
@@ -55,12 +55,12 @@ public class PuzzleBuilder {
 		int total_point = getTotalPoint();
 		for (int i = 0; i < index; i++) {
 			int result = words[i].calculatePoint();
-			if (report.isHTML())
+			if (isHTML)
 				value += "\tWord: <B>" + words[i].getword() + "</B>\tPoint: <B> " + result + "</B>\n";
 			else
 				value += "\tWord: " + words[i].getword() + "\tPoint: " + result + "\n";
 		}
-		if (report.isHTML()) {
+		if (isHTML) {
 			value += "<HR> Total Point: <B>" + total_point + "</B><P>\n";
 		} else {
 			value += "Total Point: " + total_point + "\n";
