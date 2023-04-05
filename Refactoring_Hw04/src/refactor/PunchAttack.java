@@ -5,7 +5,7 @@ public class PunchAttack implements attack{
 	/**
 	전역 객체변수, static으로 만들어 한번만 생성되게
 	**/
-	static PunchAttack instance = new PunchAttack();
+	private final static PunchAttack instance = new PunchAttack();
 	/**
 	생성자를 private으로 만들어 접근을 막는다
 	메모리 낭비를 막기 위함이므로 접근을 막음으로써 멋대로 생성하지 못하도록 함

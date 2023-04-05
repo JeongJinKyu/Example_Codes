@@ -2,7 +2,7 @@ package src.refactor;
 
 public class fly implements move{
 
-	private static fly instance = new fly();
+	private final static fly instance = new fly();
 	private fly() {	}
 	public static fly getinstance(){return instance;}
     public void Get_move(){

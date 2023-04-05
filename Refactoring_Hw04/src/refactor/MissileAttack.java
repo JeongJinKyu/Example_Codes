@@ -1,7 +1,7 @@
 package src.refactor;
 
 public class MissileAttack implements attack{
-	private static MissileAttack instance = new MissileAttack();
+	private static final MissileAttack instance = new MissileAttack();
 	private MissileAttack(){}
 	public static MissileAttack getinstance(){return instance;}
     public void Do_Attack(){

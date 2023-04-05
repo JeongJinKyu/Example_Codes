@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65abb611-e573-4d21-9cff-288e5d417eae" name="Changes" comment="main 수정">
+    <list default="true" id="65abb611-e573-4d21-9cff-288e5d417eae" name="Changes" comment="public 으로 되어있던 생성자 변수 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/RobotMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/RobotMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/MissileAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/MissileAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/PunchAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/PunchAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/fly.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/fly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/walk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/walk.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +109,8 @@
       <workItem from="1680252359722" duration="251000" />
       <workItem from="1680660733832" duration="250000" />
       <workItem from="1680661002328" duration="1705000" />
-      <workItem from="1680662877660" duration="631000" />
+      <workItem from="1680662877660" duration="723000" />
+      <workItem from="1680663613171" duration="283000" />
     </task>
     <task id="LOCAL-00001" summary="syntax error 제거">
       <created>1680663041489</created>
@@ -115,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680663041489</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="main 수정">
+      <created>1680663517289</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680663517289</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +159,7 @@
     <MESSAGE value="pull 하기 전" />
     <MESSAGE value="syntax error 제거" />
     <MESSAGE value="main 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="main 수정" />
+    <MESSAGE value="public 으로 되어있던 생성자 변수 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="public 으로 되어있던 생성자 변수 수정" />
   </component>
 </project>
