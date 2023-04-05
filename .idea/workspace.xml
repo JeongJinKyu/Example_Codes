@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65abb611-e573-4d21-9cff-288e5d417eae" name="Changes" comment="pull 하기 전">
-      <change beforePath="$PROJECT_DIR$/.idea/Github_Repository_Example_Codes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Github_Repository_Example_Codes.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="65abb611-e573-4d21-9cff-288e5d417eae" name="Changes" comment="main 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/Atom.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/Atom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/RobotMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/RobotMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/Sungard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/Sungard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/TaekwonV.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/TaekwonV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/fly.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/fly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/walk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/walk.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/IntelliJ_Projects/Github_Repository_Example_Codes",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/IntelliJ_Projects/Github_Repository_Example_Codes&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\IntelliJ_Projects\Github_Repository_Example_Codes\Refactoring_Hw04\src\Before" />
@@ -67,6 +60,40 @@
       <recent name="F:\IntelliJ_Projects\Github_Repository_Example_Codes\Refactoring_Hw04\src\Before\" />
       <recent name="F:\IntelliJ_Projects\Github_Repository_Example_Codes\Refactoring_Hw04\src" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.src.refactor.RobotMain">
+    <configuration name="RobotMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.before.RobotMain" />
+      <module name="Github_Repository_Example_Codes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.before.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="src.refactor.RobotMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.refactor.RobotMain" />
+      <module name="Github_Repository_Example_Codes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.refactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.src.refactor.RobotMain" />
+        <item itemvalue="Application.RobotMain" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -79,7 +106,16 @@
       <workItem from="1680252359722" duration="251000" />
       <workItem from="1680660733832" duration="250000" />
       <workItem from="1680661002328" duration="1705000" />
+      <workItem from="1680662877660" duration="631000" />
     </task>
+    <task id="LOCAL-00001" summary="syntax error 제거">
+      <created>1680663041489</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680663041489</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +146,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pull 하기 전" />
-    <option name="LAST_COMMIT_MESSAGE" value="pull 하기 전" />
+    <MESSAGE value="syntax error 제거" />
+    <MESSAGE value="main 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="main 수정" />
   </component>
 </project>
