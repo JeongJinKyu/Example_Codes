@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="65abb611-e573-4d21-9cff-288e5d417eae" name="Changes" comment="pull 하기 전">
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/Before/Atom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/Before/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/Before/RobotMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/Before/TaekwonV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/Refactor/Atom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/Refactor/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/Refactor/RobotMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/Refactor/Sungard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/Refactor/TaekwonV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Github_Repository_Example_Codes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Github_Repository_Example_Codes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example_Codes" beforeDir="false" afterPath="$PROJECT_DIR$/Example_Codes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/Atom.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/Atom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/RobotMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/RobotMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/Sungard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/Sungard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/TaekwonV.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/TaekwonV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/fly.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/fly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/walk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring_Hw04/src/refactor/walk.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +23,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -46,9 +46,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/IntelliJ_Projects/Github_Repository_Example_Codes/Refactoring_Hw04",
+    "last_opened_file_path": "F:/IntelliJ_Projects/Github_Repository_Example_Codes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -65,12 +71,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b8696a57-b3b8-4ab2-8838-02b6953a5e54" name="Changes" comment="" />
+      <changelist id="65abb611-e573-4d21-9cff-288e5d417eae" name="Changes" comment="pull 하기 전" />
       <created>1680252358402</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680252358402</updated>
       <workItem from="1680252359722" duration="251000" />
+      <workItem from="1680660733832" duration="250000" />
+      <workItem from="1680661002328" duration="1705000" />
     </task>
     <servers />
   </component>

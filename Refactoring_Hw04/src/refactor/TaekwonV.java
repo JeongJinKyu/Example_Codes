@@ -1,7 +1,7 @@
 package src.refactor;
 
 public class TaekwonV extends Robot {
-	public TaekwonV(String name, Attack attack, Move move) {
+	public TaekwonV(String name, attack attack, move move) {
 		super(name,attack,move);
 	}
 }

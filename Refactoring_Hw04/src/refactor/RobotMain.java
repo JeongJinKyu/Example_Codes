@@ -9,9 +9,9 @@ public class RobotMain {
 		싱글톤 패턴을 이용하여 메모리 낭비 방지
 		**/
 		PunchAttack punch_attack = PunchAttack.getinstance();
-		RocketAttack rocket_attack = RocketAttack.getinstance();
-		Fly fly_ = Fly.getinstance();
-		Walk walk_ = Walk.getinstance();
+        MissileAttack rocket_attack = MissileAttack.getinstance();
+        fly fly_ = fly.getinstance();
+        walk walk_ = walk.getinstance();
 
 		/**
 		strategy pattern 에서 context는 concrete strategy를 "몰라야" 함
@@ -19,7 +19,7 @@ public class RobotMain {
 		**/
         robots[0] = new TaekwonV("TaekwonV", punch_attack, walk_);
         robots[1] = new Atom("Atom", rocket_attack, fly_);
-        robots[2] = new Sungard("Sungard", punch_attak, fly_);
+        robots[2] = new Sungard("Sungard", punch_attack, fly_);
 
 
         for (Robot robot : robots) {
@@ -36,7 +36,7 @@ public class RobotMain {
 		생성자를 private하게 설정 하여 마음대로 객체 생성을 못하도록 방지 후
 		싱긆톤 패턴을 이용하여 getinstance()로만 객체를 가져올 수 있게끔 함 
 		**/
-        robots[2].setMove(new walk());
+        robots[2].setMove(walk_);
 		robots[2].setAttack(punch_attack);
         robots[2].attack();
         robots[2].move();
