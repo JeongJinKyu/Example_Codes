@@ -4,17 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65abb611-e573-4d21-9cff-288e5d417eae" name="Changes" comment="final 을 통해 초기화 강제(null 방지)">
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw05/before/DataSheetView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw05/before/MinMaxView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw05/before/ScoreRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw05/refactor/DataSheetView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw05/refactor/Data_test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw05/refactor/MinMaxView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw05/refactor/Observer_Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw05/refactor/Record.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Refactoring_Hw05/refactor/ScoreRecord.java" afterDir="false" />
+    <list default="true" id="65abb611-e573-4d21-9cff-288e5d417eae" name="Changes" comment="Observer Pattern 구현">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/after/BillingDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/after/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/after/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/after/Department_manage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/after/NotEnoughBalanceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/after/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/after/OrderDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/after/ShippingDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/after/TestOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/before/BillingDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/before/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/before/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/before/NotEnoughBalanceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/before/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/before/OrderDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/before/ShippingDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Refactoring_Hw07/before/TestOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Github_Repository_Example_Codes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Github_Repository_Example_Codes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -55,26 +69,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "F:/IntelliJ_Projects/Github_Repository_Example_Codes/Refactoring_Hw04",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/IntelliJ_Projects/Github_Repository_Example_Codes/Refactoring_Hw07/after&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IntelliJ_Projects\Github_Repository_Example_Codes\Refactoring_Hw07\after" />
+      <recent name="F:\IntelliJ_Projects\Github_Repository_Example_Codes\Refactoring_Hw07\before" />
       <recent name="F:\IntelliJ_Projects\Github_Repository_Example_Codes\Refactoring_Hw05\refactor" />
       <recent name="F:\IntelliJ_Projects\Github_Repository_Example_Codes\Refactoring_Hw04\src\Before" />
       <recent name="F:\IntelliJ_Projects\Github_Repository_Example_Codes\Refactoring_Hw04\src\Refactor" />
@@ -88,16 +113,20 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Refactoring_Hw07.after" />
       <recent name="Refactoring_Hw05.refactor" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Refactoring_Hw07.after" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Data_test">
-    <configuration name="Data_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Refactoring_Hw05.refactor.Data_test" />
+  <component name="RunManager" selected="Application.Refactoring_Hw07.after.TestOrder">
+    <configuration name="Refactoring_Hw07.after.TestOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Refactoring_Hw07.after.TestOrder" />
       <module name="Github_Repository_Example_Codes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Refactoring_Hw05.refactor.*" />
+          <option name="PATTERN" value="Refactoring_Hw07.after.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RobotMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.before.RobotMain" />
+    <configuration name="TestOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Refactoring_Hw07.before.TestOrder" />
       <module name="Github_Repository_Example_Codes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.before.*" />
+          <option name="PATTERN" value="Refactoring_Hw07.before.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,24 +147,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="src.refactor.RobotMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.refactor.RobotMain" />
+    <configuration name="OrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Github_Repository_Example_Codes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.refactor.*" />
+          <option name="PATTERN" value="Refactoring_Hw07.after.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Refactoring_Hw07.after" />
+      <option name="MAIN_CLASS_NAME" value="Refactoring_Hw07.after.OrderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTest.Order" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Github_Repository_Example_Codes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Refactoring_Hw07.after.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Refactoring_Hw07.after" />
+      <option name="MAIN_CLASS_NAME" value="Refactoring_Hw07.after.OrderTest" />
+      <option name="METHOD_NAME" value="Order" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTest.isCanBeCancelled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Github_Repository_Example_Codes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Refactoring_Hw07.after.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Refactoring_Hw07.after" />
+      <option name="MAIN_CLASS_NAME" value="Refactoring_Hw07.after.OrderTest" />
+      <option name="METHOD_NAME" value="isCanBeCancelled" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Data_test" />
-        <item itemvalue="Application.src.refactor.RobotMain" />
-        <item itemvalue="Application.RobotMain" />
+        <item itemvalue="Application.Refactoring_Hw07.after.TestOrder" />
+        <item itemvalue="Application.TestOrder" />
+        <item itemvalue="JUnit.OrderTest.isCanBeCancelled" />
+        <item itemvalue="JUnit.OrderTest" />
+        <item itemvalue="JUnit.OrderTest.Order" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +220,16 @@
       <workItem from="1680768530689" duration="758000" />
       <workItem from="1680774761906" duration="700000" />
       <workItem from="1680775490075" duration="2795000" />
-      <workItem from="1680949174843" duration="5993000" />
+      <workItem from="1680949174843" duration="7334000" />
+      <workItem from="1682045485435" duration="1543000" />
+      <workItem from="1682050591522" duration="5000" />
+      <workItem from="1682050616434" duration="1208000" />
+      <workItem from="1682066350581" duration="1199000" />
+      <workItem from="1682240015916" duration="3179000" />
+      <workItem from="1682243260355" duration="509000" />
+      <workItem from="1682243783816" duration="158000" />
+      <workItem from="1682243962008" duration="266000" />
+      <workItem from="1682244247661" duration="6901000" />
     </task>
     <task id="LOCAL-00001" summary="syntax error 제거">
       <created>1680663041489</created>
@@ -178,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680663936009</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Observer Pattern 구현">
+      <created>1680955688521</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680955688521</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +294,11 @@
     <MESSAGE value="main 수정" />
     <MESSAGE value="public 으로 되어있던 생성자 변수 수정" />
     <MESSAGE value="final 을 통해 초기화 강제(null 방지)" />
-    <option name="LAST_COMMIT_MESSAGE" value="final 을 통해 초기화 강제(null 방지)" />
+    <MESSAGE value="Observer Pattern 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="Observer Pattern 구현" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
